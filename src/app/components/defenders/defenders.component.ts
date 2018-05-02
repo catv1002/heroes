@@ -9,13 +9,16 @@ import { Observable } from 'rxjs/Observable';
 })
 export class DefendersComponent implements OnInit {
 
-  public defendersList: Observable<any[]>;
-  constructor(public dbServices: DatabaseService) {
+   public lista: any;
+
+   constructor(public db: DatabaseService) {
+     let defendersList: Observable<any[]>;
+     defendersList = this.db.getData('/defenders');
+     this.lista = defendersList.forEach(items => {
+       this.lista = items;
+     });
    }
-
   ngOnInit() {
-    this.defendersList = this.dbServices.getData('/defenders');
-
   }
 
 }

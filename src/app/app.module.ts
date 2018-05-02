@@ -14,13 +14,15 @@ import { AngularFireModule } from 'angularfire2';
 import { DatabaseService } from './services/database.service'
 
 //environment
-import { environment } from '../environments/environment'
+import { environment } from '../environments/environment';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AvengersComponent,
-    DefendersComponent
+    DefendersComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
