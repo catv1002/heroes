@@ -1,0 +1,6 @@
+---
+applications:
+- name: Heroes
+  memory: 128M
+  buildpack: https://github.com/catv1002/heroes.git
+  timeout: 60

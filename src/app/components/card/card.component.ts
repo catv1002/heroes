@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {Observable} from 'rxjs/Observable';
+import {Tarjeta} from '../../models/hero';
+
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
@@ -7,7 +9,8 @@ import {Observable} from 'rxjs/Observable';
 })
 export class CardComponent {
 
-  @Input('datos') listaHeroes;
+  @Input("datos") dato:Tarjeta;
+
   constructor() { }
 
 }
