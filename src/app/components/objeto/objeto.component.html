@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container animated fadeInRight">
   <div class="row">
     <div class="col-md-2">
       <img [ngStyle]="{'width':'5rem'}" class="m-4" src="http://cdn.onlinewebfonts.com/svg/img_170454.png" routerLink="/" href="#">
@@ -11,7 +11,7 @@
 
 <div class="container">
   <div class="d-flex align-content-start flex-wrap">
-    <div *ngFor="let datos of objects">
+    <div class="animated fadeInUp" *ngFor="let datos of objects">
       <app-card [datos]="datos"></app-card>
     </div>
   </div>
